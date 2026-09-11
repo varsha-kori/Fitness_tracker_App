@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://fitness-tracker-app-beta-nine.vercel.app/login",
+  baseURL: import.meta.env.VITE_API_URL || "http://127.0.0.1:5004/api",
 });
 
 API.interceptors.request.use((config) => {
